@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "60f83e93d78dc86b0b4e2e73"
+  },
+  "user_id": "student2",
+  "password": "$2a$10$L8wIqfaY5cLkTIu0c80rxONglnTFlYSxeW/tAYqL0tZC3wPK7a8iS",
+  "created_at": {
+    "$date": "2021-07-21T15:34:43.727Z"
+  },
+  "updated_at": {
+    "$date": "2021-07-21T15:34:43.727Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f83ea3d78dc86b0b4e2e76"
+  },
+  "user_id": "student1",
+  "password": "$2a$10$IVQbHIW0CcCFBmiuzQ0Tge2dstS.OFJHXKVJkeT0rxzDQRbe3ekZW",
+  "created_at": {
+    "$date": "2021-07-21T15:34:59.021Z"
+  },
+  "updated_at": {
+    "$date": "2021-07-21T15:34:59.021Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f83eb3d78dc86b0b4e2e79"
+  },
+  "user_id": "admin",
+  "password": "$2a$10$7WcFKQsuPXgZjWiBCHjYgejHPJkmVufTO5nCBTltC7fFWODrv.cde",
+  "created_at": {
+    "$date": "2021-07-21T15:35:15.415Z"
+  },
+  "updated_at": {
+    "$date": "2021-07-21T15:35:15.415Z"
+  },
+  "__v": 0
+}]

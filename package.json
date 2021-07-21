@@ -1,0 +1,37 @@
+{
+  "name": "attainu-task",
+  "version": "1.0.0",
+  "description": "User Auth ANd Basic CRUD application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Deepank0777/attainUTask.git"
+  },
+  "author": "Deepank <deepank.bh@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deepank0777/attainUTask/issues"
+  },
+  "homepage": "https://github.com/Deepank0777/attainUTask#readme",
+  "dependencies": {
+    "@hapi/joi": "^17.1.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.13.3",
+    "mysql2": "^2.2.5",
+    "sequelize": "^5.22.3"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1"
+  }
+}

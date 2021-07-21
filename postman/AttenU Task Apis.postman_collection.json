@@ -1,0 +1,317 @@
+{
+	"id": "1efee1da-13af-2dea-43ed-7f824614a90c",
+	"name": "AttenU Task Apis",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Post",
+			"description": "",
+			"collectionId": "1efee1da-13af-2dea-43ed-7f824614a90c",
+			"order": [
+				"1555313c-5aa6-235d-50b9-ee75d11f4126",
+				"cfbd1e3b-a19d-127a-ca79-ad6cff418b91",
+				"72c9f067-0601-e2f2-d67b-57b9e79d323f",
+				"27782252-c20f-30df-a79d-bd5b238b74d5"
+			],
+			"owner": "3976338",
+			"folders_order": [],
+			"id": "4a70549f-4028-6991-295d-cfee39fbba8e"
+		},
+		{
+			"name": "User",
+			"description": "",
+			"collectionId": "1efee1da-13af-2dea-43ed-7f824614a90c",
+			"order": [
+				"3307b3b0-6e3d-5a62-414b-6f7097b2df83",
+				"68276266-bfb1-83cf-37e5-247c79f9831a"
+			],
+			"owner": "3976338",
+			"folders_order": [],
+			"id": "57e4b123-15c3-921b-de85-bbffbfc8e16d"
+		}
+	],
+	"folders_order": [
+		"57e4b123-15c3-921b-de85-bbffbfc8e16d",
+		"4a70549f-4028-6991-295d-cfee39fbba8e"
+	],
+	"timestamp": 1626858437944,
+	"owner": "3976338",
+	"public": false,
+	"requests": [
+		{
+			"id": "1555313c-5aa6-235d-50b9-ee75d11f4126",
+			"headers": "Content-Type: application/json\nx-access-token: {{auth_token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-access-token",
+					"value": "{{auth_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{attain_api_url}}/api/post/",
+			"folder": "57e4b123-15c3-921b-de85-bbffbfc8e16d",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1626882160700,
+			"name": "Create Post",
+			"description": "",
+			"collectionId": "1efee1da-13af-2dea-43ed-7f824614a90c",
+			"responses": [],
+			"rawModeData": "{\n\t\"post\":\"hey this is my third post\"\n}"
+		},
+		{
+			"id": "27782252-c20f-30df-a79d-bd5b238b74d5",
+			"headers": "Content-Type: application/json\nx-access-token: {{auth_token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-access-token",
+					"value": "{{auth_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{attain_api_url}}/api/post/:post_id",
+			"folder": "4a70549f-4028-6991-295d-cfee39fbba8e",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {
+				"post_id": "60f8406b39850e6b402397d5"
+			},
+			"pathVariableData": [
+				{
+					"key": "post_id",
+					"value": "60f8406b39850e6b402397d5"
+				}
+			],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1626882361677,
+			"name": "Delete Post",
+			"description": "",
+			"collectionId": "1efee1da-13af-2dea-43ed-7f824614a90c",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "3307b3b0-6e3d-5a62-414b-6f7097b2df83",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{attain_api_url}}/api/user/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1626881727527,
+			"name": "Sign Up",
+			"description": "",
+			"collectionId": "1efee1da-13af-2dea-43ed-7f824614a90c",
+			"responses": [],
+			"rawModeData": "{\n\t\"userId\":\"student1\",\n\t\"password\":\"std1@student\"\n}"
+		},
+		{
+			"id": "68276266-bfb1-83cf-37e5-247c79f9831a",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{attain_api_url}}/api/user/login",
+			"folder": "57e4b123-15c3-921b-de85-bbffbfc8e16d",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "userId",
+					"value": "admin",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "password",
+					"value": "admin@admin",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "userId",
+					"value": "student1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "std1@student",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userId",
+					"value": "student2",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "password",
+					"value": "std2@student",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1626882460787,
+			"name": "Login",
+			"description": "",
+			"collectionId": "1efee1da-13af-2dea-43ed-7f824614a90c",
+			"responses": []
+		},
+		{
+			"id": "72c9f067-0601-e2f2-d67b-57b9e79d323f",
+			"headers": "Content-Type: application/json\nx-access-token: {{auth_token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-access-token",
+					"value": "{{auth_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{attain_api_url}}/api/post/:post_id",
+			"folder": "4a70549f-4028-6991-295d-cfee39fbba8e",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {
+				"post_id": "60f8406b39850e6b402397d4"
+			},
+			"pathVariableData": [
+				{
+					"key": "post_id",
+					"value": "60f8406b39850e6b402397d4"
+				}
+			],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1626882308685,
+			"name": "Update Post",
+			"description": "",
+			"collectionId": "1efee1da-13af-2dea-43ed-7f824614a90c",
+			"responses": [],
+			"rawModeData": "{\n\t\"post\":\"hey this is my updated-2 third post\"\n}"
+		},
+		{
+			"id": "cfbd1e3b-a19d-127a-ca79-ad6cff418b91",
+			"headers": "Content-Type: application/json\nx-access-token: {{auth_token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-access-token",
+					"value": "{{auth_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{attain_api_url}}/api/post/?start=0&limit=10",
+			"folder": "4a70549f-4028-6991-295d-cfee39fbba8e",
+			"queryParams": [
+				{
+					"key": "start",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "limit",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1626882141021,
+			"name": "Fetch Post",
+			"description": "",
+			"collectionId": "1efee1da-13af-2dea-43ed-7f824614a90c",
+			"responses": [],
+			"rawModeData": "{\n\t\"post\":\"hey this is my second post\"\n}"
+		}
+	]
+}

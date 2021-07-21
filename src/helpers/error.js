@@ -11,11 +11,11 @@ const handleError = (err, res) => {
   res.status(statusCode).json({
     success: false,
     statusCode,
-    message
+    message,
   });
 };
 
 module.exports = {
   CustomError,
-  handleError
+  handleError,
 };

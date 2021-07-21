@@ -6,7 +6,7 @@ const {
   MONGO_DB,
   APP_PORT,
   LOGIN_SECRET,
-  JWT_THRESHOLD
+  JWT_THRESHOLD,
 } = process.env;
 
 module.exports = {
@@ -17,5 +17,5 @@ module.exports = {
   MONGO_PORT,
   MONGO_DB,
   LOGIN_SECRET,
-  JWT_THRESHOLD
+  JWT_THRESHOLD,
 };

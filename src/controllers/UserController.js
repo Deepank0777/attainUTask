@@ -1,5 +1,5 @@
 const Joi = require("@hapi/joi");
-const {loginUser, registerUser} = require("../services/UserService");
+const { loginUser, registerUser } = require("../services/UserService");
 const { CustomError } = require("../helpers/error");
 const {
   LOGIN_SUCCESS_MESSAGE,
@@ -19,11 +19,11 @@ module.exports = {
 
       if (error) throw new CustomError(400, error.details[0].message);
 
-      const {_id, user_id:userId} = await registerUser(value);
+      const { _id, user_id: userId } = await registerUser(value);
       res.status(201).json({
         success: true,
         message: SIGNUP_SUCCESS_MESSAGE,
-        data: {_id, userId},
+        data: { _id, userId },
       });
     } catch (err) {
       next(err);
@@ -40,7 +40,7 @@ module.exports = {
 
       if (error) throw new CustomError(400, error.details[0].message);
 
-      const { token, JWT_THRESHOLD:expires_in } = await loginUser(value);
+      const { token, JWT_THRESHOLD: expires_in } = await loginUser(value);
       res.status(200).json({
         success: true,
         message: LOGIN_SUCCESS_MESSAGE,
